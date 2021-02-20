@@ -3,8 +3,6 @@ package address;
 import address.data.AddressEntry;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.stream.Stream;
 
 /**

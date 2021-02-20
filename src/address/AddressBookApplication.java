@@ -1,6 +1,7 @@
 package address;
 
 import address.data.AddressEntry;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

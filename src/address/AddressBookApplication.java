@@ -1,20 +1,27 @@
 package address;
 
 import address.data.AddressEntry;
-import java.util.ArrayList;
+
 import java.util.Scanner;
+import java.util.Vector;
 
 /**
  * Creates a new instance of an AddressBook object and adds 2 AddressEntry with the given data
  * then lists the entries in the output
+ * @author Tey Jon Sornet
+ * @since February 2021
  */
 public class AddressBookApplication {
+    /**
+     * Method that runs the main application
+     * @param args String collection
+     */
     public static void main(String[] args) {
         // Create an instance of AddressBook
         AddressBook ab = new AddressBook();
 
         // Prompt for menu and retrieve selection
-        char selection = Menu.prompt_Menu();
+        char selection = Menu.prompt_Menu(System.in);
 
         while (selection != 'e') {
             switch(selection) {
@@ -35,7 +42,7 @@ public class AddressBookApplication {
                     break;
             }
 
-            selection = Menu.prompt_Menu();
+            selection = Menu.prompt_Menu(System.in);
         }
 
         if (selection == 'e') {
@@ -43,12 +50,16 @@ public class AddressBookApplication {
         }
     }
 
+    /**
+     * Method to find an entry in AddressBook
+     * @param ab AddressBook instance
+     */
     private static void findEntry(AddressBook ab) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter in all or the beginning of the Last Name of the contact you wish to find:");
         System.out.print("> ");
         String lastName = input.nextLine();
-        ArrayList<AddressEntry> result = ab.find(lastName);
+        Vector<AddressEntry> result = ab.find(lastName);
 
         if (result.size() > 0) {
             System.out.println("The following " + result.size() + " entries were found in the address book for a last name starting with " + lastName);
@@ -60,6 +71,10 @@ public class AddressBookApplication {
         }
     }
 
+    /**
+     * Method to remove an entry from AddressBook
+     * @param ab AddressBook instance
+     */
     private static void removeEntry(AddressBook ab) {
         Scanner input = new Scanner(System.in);
         int selection;
@@ -67,7 +82,7 @@ public class AddressBookApplication {
         System.out.println("Enter in Last Name of contact to remove:");
         System.out.print("> ");
         String lastName = input.nextLine();
-        ArrayList<AddressEntry> result = ab.find(lastName);
+        Vector<AddressEntry> result = ab.find(lastName);
 
         if (result.size() <= 0) {
             System.out.println("No entries found");
@@ -103,6 +118,10 @@ public class AddressBookApplication {
         }
     }
 
+    /**
+     * Method to add an entry to Address Book
+     * @param ab AddressBook instance
+     */
     private static void addEntry(AddressBook ab) {
         AddressEntry entry;
         String firstName;
@@ -115,21 +134,21 @@ public class AddressBookApplication {
         String email;
         int id = ab.getAddressEntryList().size();
 
-        firstName = Menu.prompt_FirstName();
+        firstName = Menu.prompt_FirstName(System.in);
 
-        lastName = Menu.prompt_LastName();
+        lastName = Menu.prompt_LastName(System.in);
 
-        street = Menu.prompt_Street();
+        street = Menu.prompt_Street(System.in);
 
-        city = Menu.prompt_City();
+        city = Menu.prompt_City(System.in);
 
-        state = Menu.prompt_State();
+        state = Menu.prompt_State(System.in);
 
-        zip = Menu.prompt_Zip();
+        zip = Menu.prompt_Zip(System.in);
 
-        phone = Menu.prompt_Telephone();
+        phone = Menu.prompt_Telephone(System.in);
 
-        email = Menu.prompt_Email();
+        email = Menu.prompt_Email(System.in);
 
         entry = new AddressEntry(id, firstName, lastName, street, city, state, zip, phone, email);
 
@@ -140,4 +159,3 @@ public class AddressBookApplication {
     }
 
 }
-

@@ -35,9 +35,8 @@ public class AddressBook {
     /**
      * Method to add a single AddressEntry into AddressBook
      * @param addressEntry AddressEntry object
-     * @return
      */
-    public boolean add(AddressEntry addressEntry) {
+    public void add(AddressEntry addressEntry) {
         try {
             // Load Oracle JDBC Driver
             Class.forName("oracle.jdbc.OracleDriver");
@@ -60,7 +59,6 @@ public class AddressBook {
         }
 
         addressEntryList.add(addressEntry);
-        return false;
     }
 
     /**

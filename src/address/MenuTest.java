@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Class to test Menu class
  *
  * @author Tey Jon Sornet
+ * @since March 2021
  */
 class MenuTest {
 

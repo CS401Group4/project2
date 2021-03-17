@@ -12,8 +12,8 @@ import java.awt.event.ActionListener;
 /**
  * GUI class for rendering a form to add a new AddressEntry
  *
- * @author Tey Jon Sornet
- * @since February 2021
+ * @author Brian Siu
+ * @since March 2021
  */
 public class AddEntryForm extends JDialog {
     /**

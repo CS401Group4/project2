@@ -12,8 +12,8 @@ import java.awt.event.ActionListener;
 /**
  * GUI Class for the Find entry component
  *
- * @author Tey Jon Sornet
- * @since February 2021
+ * @author Alberto Romero
+ * @since March 2021
  */
 public class FindEntryPanel {
     /**

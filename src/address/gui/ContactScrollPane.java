@@ -18,8 +18,8 @@ import java.util.Scanner;
 /**
  * Class that holds the AddressBook instance for the application
  *
- * @author Tey Jon Sornet
- * @since February 2021
+ * @author Ghazi Noseir
+ * @since March 2021
  */
 public class ContactScrollPane extends JFrame {
     /**

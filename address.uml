@@ -4,10 +4,10 @@
   <OriginalElement>address</OriginalElement>
   <nodes>
     <node x="338.25" y="1549.0">address.MenuTest</node>
-    <node x="1272.4215818903322" y="2133.0">address.gui.AddressBookApplicationGUI</node>
     <node x="376.0" y="983.0">address.Menu</node>
-    <node x="138.5" y="22.0">address.data.Name</node>
+    <node x="1272.4215818903322" y="2133.0">address.gui.AddressBookApplicationGUI</node>
     <node x="0.0" y="2366.0">address.gui.FindEntryPanelTest</node>
+    <node x="138.5" y="22.0">address.data.Name</node>
     <node x="234.0" y="2366.0">address.gui.AddEntryFormTest</node>
     <node x="1124.375" y="1504.0">address.gui.ContactScrollPane</node>
     <node x="1446.7395833333333" y="410.0">address.gui.event.TextChangeDocumentListener</node>
@@ -21,176 +21,15 @@
     <node x="1318.6875" y="762.0">address.gui.AddEntryForm</node>
     <node x="862.375" y="1604.0">address.AddressBookTest</node>
     <node x="761.5416666666667" y="1015.0">address.AddressBook</node>
-    <node x="1753.7395833333333" y="278.0">address.data.AddressTest</node>
     <node x="1345.375" y="1874.0">address.gui.FindEntryPanel</node>
+    <node x="1753.7395833333333" y="278.0">address.data.AddressTest</node>
   </nodes>
   <notes />
-  <edges>
-    <edge source="address.gui.AddEntryForm" target="address.data.AddressEntry">
-      <point x="-78.33333333333326" y="-336.0" />
-      <point x="1357.8541666666667" y="702.0" />
-      <point x="1234.9702380952383" y="702.0" />
-      <point x="159.42857142857156" y="116.0" />
-    </edge>
-    <edge source="address.gui.AddEntryForm" target="address.gui.event.TextChangeDocumentListener">
-      <point x="78.33333333333326" y="-336.0" />
-      <point x="1514.5208333333333" y="742.0" />
-      <point x="1518.4895833333333" y="742.0" />
-      <point x="-71.75" y="60.0" />
-    </edge>
-    <edge source="address.AddressBookTest" target="address.AddressBook">
-      <point x="-90.75" y="-60.0" />
-      <point x="892.625" y="1484.0" />
-      <point x="885.7083333333333" y="1484.0" />
-      <point x="-24.83333333333337" y="83.0" />
-    </edge>
-    <edge source="address.gui.FindEntryPanel" target="address.data.AddressEntry">
-      <point x="0.0" y="-104.5" />
-      <point x="1555.875" y="1849.0" />
-      <point x="1606.8923611111113" y="1849.0" />
-      <point x="1606.8923611111113" y="682.0" />
-      <point x="1305.8273809523812" y="682.0" />
-      <point x="230.28571428571445" y="116.0" />
-    </edge>
-    <edge source="address.AddressBookApplication" target="address.data.AddressEntry">
-      <point x="-50.0" y="-60.0" />
-      <point x="667.375" y="1484.0" />
-      <point x="686.875" y="1484.0" />
-      <point x="686.875" y="712.0" />
-      <point x="916.1130952380953" y="712.0" />
-      <point x="-159.42857142857144" y="116.0" />
-    </edge>
-    <edge source="address.gui.ContactScrollPane" target="address.AddressBook">
-      <point x="-184.1875" y="-160.0" />
-      <point x="1150.6875" y="1464.0" />
-      <point x="985.0416666666667" y="1464.0" />
-      <point x="74.5" y="83.0" />
-    </edge>
-    <edge source="address.data.NameTest" target="address.data.Name">
-      <point x="-51.75" y="-104.0" />
-      <point x="51.75" y="248.0" />
-      <point x="151.3571428571429" y="248.0" />
-      <point x="-77.14285714285711" y="72.0" />
-    </edge>
-    <edge source="address.gui.FindEntryPanel" target="address.gui.event.TextChangeDocumentListener">
-      <point x="140.33333333333326" y="-104.5" />
-      <point x="1696.2083333333333" y="1849.0" />
-      <point x="1659.0335046897549" y="1849.0" />
-      <point x="1659.0335046897549" y="742.0" />
-      <point x="1661.9895833333333" y="742.0" />
-      <point x="71.75" y="60.0" />
-    </edge>
-    <edge source="address.data.AddressTest" target="address.data.Address">
-      <point x="-45.5" y="-192.0" />
-      <point x="1799.2395833333333" y="248.0" />
-      <point x="1274.6845238095239" y="248.0" />
-      <point x="75.14285714285722" y="94.0" />
-    </edge>
-    <edge source="address.gui.ContactScrollPane" target="address.data.AddressEntry">
-      <point x="26.3125" y="-160.0" />
-      <point x="1361.1875" y="1474.0" />
-      <point x="1308.1875" y="1474.0" />
-      <point x="1308.1875" y="712.0" />
-      <point x="1199.5416666666667" y="712.0" />
-      <point x="124.0" y="116.0" />
-    </edge>
-    <edge source="address.data.AddressEntry" target="address.data.Name">
-      <point x="-206.66666666666674" y="-116.0" />
-      <point x="868.875" y="228.0" />
-      <point x="254.21428571428578" y="228.0" />
-      <point x="25.71428571428578" y="72.0" />
-    </edge>
-    <edge source="address.data.AddressEntryTest" target="address.data.Name">
-      <point x="-45.75" y="-148.0" />
-      <point x="218.75" y="742.0" />
-      <point x="228.5" y="742.0" />
-      <point x="0.0" y="72.0" />
-    </edge>
-    <edge source="address.gui.AddressBookApplicationGUI" target="address.gui.FindEntryPanel">
-      <point x="35.0" y="-94.0" />
-      <point x="1447.4215818903322" y="2113.0" />
-      <point x="1450.625" y="2113.0" />
-      <point x="-105.25" y="104.5" />
-    </edge>
-    <edge source="address.AddressBook" target="address.data.AddressEntry">
-      <point x="-74.50000000000011" y="-83.0" />
-      <point x="836.0416666666665" y="732.0" />
-      <point x="986.9702380952382" y="732.0" />
-      <point x="-88.57142857142856" y="116.0" />
-    </edge>
-    <edge source="address.AddressBookApplication" target="address.Menu">
-      <point x="-100.0" y="-60.0" />
-      <point x="617.375" y="1484.0" />
-      <point x="595.75" y="1484.0" />
-      <point x="73.25" y="115.0" />
-    </edge>
-    <edge source="address.MenuTest" target="address.Menu">
-      <point x="0.0" y="-115.0" />
-      <point x="-73.25" y="115.0" />
-    </edge>
-    <edge source="address.AddressBookApplication" target="address.AddressBook">
-      <point x="50.0" y="-60.0" />
-      <point x="767.375" y="1484.0" />
-      <point x="786.375" y="1484.0" />
-      <point x="-124.16666666666663" y="83.0" />
-    </edge>
-    <edge source="address.gui.FindEntryPanel" target="address.gui.ContactScrollPane">
-      <point x="-140.33333333333348" y="-104.5" />
-      <point x="1415.5416666666665" y="1849.0" />
-      <point x="1475.2083333333335" y="1849.0" />
-      <point x="140.33333333333348" y="160.0" />
-    </edge>
-    <edge source="address.gui.AddEntryForm" target="address.gui.ContactScrollPane">
-      <point x="78.33333333333326" y="336.0" />
-      <point x="1514.5208333333333" y="1484.0" />
-      <point x="1519.0625" y="1484.0" />
-      <point x="184.1875" y="-160.0" />
-    </edge>
-    <edge source="address.gui.AddressBookApplicationGUI" target="address.gui.ContactScrollPane">
-      <point x="-105.0" y="-94.0" />
-      <point x="1307.4215818903322" y="2113.0" />
-      <point x="1276.8564213564214" y="2113.0" />
-      <point x="1276.8564213564214" y="1849.0" />
-      <point x="1194.5416666666667" y="1849.0" />
-      <point x="-140.33333333333326" y="160.0" />
-    </edge>
-    <edge source="address.gui.ContactScrollPane" target="address.gui.AddEntryForm">
-      <point x="78.9375" y="-160.0" />
-      <point x="1413.8125" y="1464.0" />
-      <point x="1357.8541666666667" y="1464.0" />
-      <point x="-78.33333333333326" y="336.0" />
-    </edge>
-    <edge source="address.data.AddressEntryTest" target="address.data.AddressEntry">
-      <point x="45.75" y="-148.0" />
-      <point x="310.25" y="692.0" />
-      <point x="845.2559523809524" y="692.0" />
-      <point x="-230.28571428571433" y="116.0" />
-    </edge>
-    <edge source="address.data.AddressEntryTest" target="address.data.Address">
-      <point x="-15.25" y="-148.0" />
-      <point x="249.25" y="742.0" />
-      <point x="239.5" y="742.0" />
-      <point x="239.5" y="238.0" />
-      <point x="1086.827380952381" y="238.0" />
-      <point x="-112.71428571428571" y="94.0" />
-    </edge>
-    <edge source="address.data.AddressEntry" target="address.data.Address">
-      <point x="41.33333333333326" y="-116.0" />
-      <point x="1116.875" y="258.0" />
-      <point x="1161.970238095238" y="258.0" />
-      <point x="-37.571428571428555" y="94.0" />
-    </edge>
-    <edge source="address.AddressBookTest" target="address.data.AddressEntry">
-      <point x="90.75" y="-60.0" />
-      <point x="1074.125" y="1484.0" />
-      <point x="1134.5486111111113" y="1484.0" />
-      <point x="1134.5486111111113" y="742.0" />
-      <point x="1093.2559523809525" y="742.0" />
-      <point x="17.71428571428578" y="116.0" />
-    </edge>
-  </edges>
-  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="732.6666666666665" y="2135.333333333333" />
-  <SelectedNodes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.19028819581523884" x="1256.5" y="1198.0" />
+  <SelectedNodes>
+    <node>address.MenuTest</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>
